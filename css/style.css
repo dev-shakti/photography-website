@@ -1,0 +1,240 @@
+:root{
+    --primary--color:#f58d17;
+    --dark--color:#2d3436;
+    --semidark-color:#636e72;
+    --light-color:#bdc3c7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif !important;
+    line-height: 1.7;
+    color: #777;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: var(--dark--color) !important;
+    margin: 10px 0;
+}
+
+p{
+    color: var(--semidark-color);
+    margin: 10px 0;
+}
+
+a{
+    color: var(--dark--color)!important;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: var(--primary--color) !important;
+}
+
+img{
+    width: 100%;
+}
+
+/* navbar */
+.navbar ul li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* showcase */
+.showcase h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.showcase p{
+    font-size: 20px;
+    color: var(--light-color);
+}
+
+
+.slide-1{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/1.jpg");
+}
+
+.slide-2{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/2.jpg");
+}
+
+.slide-3{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/3.jpg");
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+/* gallery */
+
+.gallery{
+    padding: 50px 0 !important;
+}
+
+.gallery .divider{
+    background-color: var(--primary--color);
+    width: 70px;
+    height: 3px;
+    margin: auto;
+}
+
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper img{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
+}
+
+/* about */
+.about{
+    padding: 50px 0 !important;
+}
+#about .divider{
+    background-color: var(--primary--color);
+    width: 70px;
+    height: 3px;
+}
+
+#about p
+{
+    width: 80% !important;
+}
+
+.full-image{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/3.jpg");
+    padding: 100px 0;
+    text-align: center;
+}
+
+.full-image p,
+.text-content p{
+    max-width: 600px;
+    margin:20px auto;
+    color: var(--light-color) !important;
+}
+
+
+/* testimonial */
+.testimonial{
+    padding: 50px 0 !important;
+}
+.testimonial p{
+    width: 80% !important;
+}
+/* text content */
+.text-content{
+    padding: 100px 0 !important;
+    text-align: center;
+}
+
+.text-content p{
+    color: gray !important;
+}
+/* contact */
+.contact{
+    padding: 50px 0;
+}
+.contact .divider{
+    background-color: var(--primary--color);
+    width: 70px;
+    height: 3px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.contact .form-control{
+    border-radius: 0;
+    color: var(--light-color);
+}
+
+.contact .form-control:focus{
+    outline: none;
+    border-color: var(--primary--color);
+    padding: 10px;
+}
+
+.contact textarea{
+    resize: none;
+    height: 200px;
+}
+
+/* footer */
+.footer{
+    color: #fff !important;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/1.jpg") no-repeat center center/cover;
+}
+
+.footer h4{
+    color: #fff !important;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    color: var(--light-color) !important;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.footer .social-icons i{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: normal !important;
+}
+
+.footer-bottom p{
+   font-size: 16px;
+}
+
+/* button style */
+.btn{
+    border: 0;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px !important;
+    border-radius: 3px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px !important;
+}
+
+.btn-brand{
+    color: #fff !important;
+    border-color: var(--primary--color) !important;
+    background-color: var(--primary--color) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover{
+    background-color: #d77d16 !important;
+    color: #000 !important;
+}
+
+
+
